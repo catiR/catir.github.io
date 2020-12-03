@@ -41,10 +41,25 @@ $(document).ready(function() {
         $("#read-more").fadeToggle("fast");
 
         // Change the button
-        if ($("#badge-more").text() == "more") {
-           $("#badge-more").text("less");
+        if ($("#badge-more").text() == "show") {
+           $("#badge-more").text("hide");
         } else {
-           $("#badge-more").text("more");
+           $("#badge-more").text("show");
+        }
+
+     });
+
+    // Show more on click
+     $("#link-more").on("click", function() {
+
+        // Show the div
+	if ($("#read-more").is(':hidden')) {
+           $("#read-more").fadeIn("fast");
+        }
+
+        // Change the button
+        if ($("#badge-more").text() == "show") {
+           $("#badge-more").text("hide");
         }
 
      });
