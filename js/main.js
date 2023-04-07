@@ -32,19 +32,35 @@ $(document).ready(function() {
   })
 
   // Initally hide the read more div
-     $("#read-more").css("display", "none");
+    $("#read-paper").css("display", "none");
+    $("#read-about").css("display", "none");
 
      // Show more on click
-     $("#badge-more").on("click", function() {
+     $("#badge-paper").on("click", function() {
 
         // Show/hide the div
-        $("#read-more").fadeToggle("fast");
+        $("#read-paper").fadeToggle("fast");
 
         // Change the button
-        if ($("#badge-more").text() == "show") {
-           $("#badge-more").text("hide");
+        if ($("#badge-paper").text() == "show") {
+           $("#badge-paper").text("hide");
         } else {
-           $("#badge-more").text("show");
+           $("#badge-paper").text("show");
+        }
+
+     });
+
+         // Show more on click
+     $("#badge-about").on("click", function() {
+
+        // Show/hide the div
+        $("#read-about").fadeToggle("fast");
+
+        // Change the button
+        if ($("#badge-about").text() == "show") {
+           $("#badge-about").text("hide");
+        } else {
+           $("#badge-about").text("show");
         }
 
      });
@@ -53,13 +69,13 @@ $(document).ready(function() {
      $("#link-more").on("click", function() {
 
         // Show the div
-	if ($("#read-more").is(':hidden')) {
-           $("#read-more").fadeIn("fast");
+	if ($("#read-paper").is(':hidden')) {
+           $("#read-paper").fadeIn("fast");
         }
 
         // Change the button
-        if ($("#badge-more").text() == "show") {
-           $("#badge-more").text("hide");
+        if ($("#badge-paper").text() == "show") {
+           $("#badge-paper").text("hide");
         }
 
      });

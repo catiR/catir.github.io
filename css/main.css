@@ -10,7 +10,13 @@ body {
   color: #20364c !important;
 }
 
-#badge-more {
+#badge-paper {
+  background-color: #1585cf;
+  color: white;
+  cursor: pointer;
+}
+
+#badge-about {
   background-color: #1585cf;
   color: white;
   cursor: pointer;
